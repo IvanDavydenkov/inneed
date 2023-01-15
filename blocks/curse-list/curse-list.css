@@ -1,0 +1,8 @@
+.curse-list {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
