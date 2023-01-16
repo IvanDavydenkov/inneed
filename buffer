@@ -1,11 +1,7 @@
 let webBrifLink = document.querySelector('.web')
-let webBootcampBrifLink = document.querySelector('.web-bootcamp')
-let webPlusBrifLink = document.querySelector('.web-plus')
-let reactDevBrifLink = document.querySelector('.react-dev')
-let middleFrontendBrifLink = document.querySelector('.middle-frontend')
 
 
-function toggleBrif(web) {
+function toggleBrif() {
     curseList.insertAdjacentHTML(`afterbegin`, `
 <div class="pop-up">
 <div class="pop-up__container">
@@ -47,23 +43,5 @@ function toggleBrif(web) {
 
 }
 
-// webBrifLink.addEventListener("click", () => {
-//     for (let i = 0; i < programmArray.length; i++) {
-//         toggleBrif(programmArray[i])
-//     }
-// })
-webBrifLink.addEventListener('click', () => {
-    toggleBrif(web)
-})
-webBootcampBrifLink.addEventListener('click', () => {
-    toggleBrif(webBootcamp)
-})
-webPlusBrifLink.addEventListener('click', () => {
-    toggleBrif(webPlus)
-})
-reactDevBrifLink.addEventListener('click', () => {
-    toggleBrif(reactDev)
-})
-middleFrontendBrifLink.addEventListener('click', () => {
-    toggleBrif(middleFrontend)
-})
+webBrifLink.addEventListener("click", toggleBrif)
+
