@@ -1,8 +1,9 @@
-let webBrifLink = document.querySelector('.web')
-
+let webBrifLink = document.querySelector(".web");
 
 function toggleBrif() {
-    curseList.insertAdjacentHTML(`afterbegin`, `
+  curseList.insertAdjacentHTML(
+    `afterbegin`,
+    `
 <div class="pop-up">
 <div class="pop-up__container">
     <ul class="pop-up__list">
@@ -15,33 +16,53 @@ function toggleBrif() {
 </div >
 </div >
     `
-    )
-    let closeBrifButton = document.querySelector('.pop-up__close-button')
-    let popUp = document.querySelector('.pop-up')
-    let popUpList = curseList.querySelector('.pop-up__list')
-    let popUpContainer = document.querySelector('.pop-up__info-box')
-    //delete pop-up
-    function deletePopUp() {
-        popUp.remove()
-    }
-    closeBrifButton.addEventListener('click', deletePopUp)
-    //Requier links
-    for (let i = 0; i < web.requireLinks.length; i++) {
-        popUpContainer.insertAdjacentHTML('afterbegin',
-            `
+  );
+  let closeBrifButton = document.querySelector(".pop-up__close-button");
+  let popUp = document.querySelector(".pop-up");
+  let popUpList = curseList.querySelector(".pop-up__list");
+  let popUpContainer = document.querySelector(".pop-up__info-box");
+  //delete pop-up
+  function deletePopUp() {
+    popUp.remove();
+  }
+  closeBrifButton.addEventListener("click", deletePopUp);
+  //Requier links
+  for (let i = 0; i < web.requireLinks.length; i++) {
+    popUpContainer.insertAdjacentHTML(
+      "afterbegin",
+      `
         <a target="_blank" href="${web.requireLinks[i].link}"><p class="pop-up__info-box-item">${web.requireLinks[i].name}</p></a>
-        `)
-    }
-    //Main brif
-    for (let i = 0; i < web.popUp.length; i++) {
-        popUpList.insertAdjacentHTML('afterbegin',
-            `
+        `
+    );
+  }
+  //Main brif
+  for (let i = 0; i < web.popUp.length; i++) {
+    popUpList.insertAdjacentHTML(
+      "afterbegin",
+      `
             <li class="pop-up__list-item">${web.popUp[i]}</li>
-        `)
-    }
-
-
+        `
+    );
+  }
 }
 
-webBrifLink.addEventListener("click", toggleBrif)
+webBrifLink.addEventListener("click", toggleBrif);
 
+let Maska = {
+  id: "",
+  title: "",
+  payment: "",
+  syllabuses: "",
+  brif: "#",
+  notion: "",
+  long: "",
+  freetrack: "",
+  format: "",
+  timeInWeek: "",
+  document: "",
+  exp: "",
+  price: [(monthly = ""), (credit = ""), (full = "")],
+  dateOfStarts: [],
+  popUp: [],
+  requireLinks: [],
+};

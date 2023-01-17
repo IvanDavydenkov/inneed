@@ -1,8 +1,30 @@
 .curse-list {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+@media screen and (max-width: 1210px) {
+  .curse-list {
+    grid-template-columns: repeat(3, 280px);
+  }
+}
+@media screen and (max-width: 950px) {
+  .curse-list {
+    grid-template-columns: repeat(3, 265px);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .curse-list {
+    grid-template-columns: repeat(2, 300px);
     gap: 20px;
-    list-style-type: none;
-    padding: 0;
-    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .curse-list {
+    grid-template-columns: repeat(1, 280px);
+  }
 }

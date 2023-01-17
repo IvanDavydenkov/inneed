@@ -1,9 +1,9 @@
 .pop-up__list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
-    text-align: center;
-    padding: 5px;
-    white-space: nowrap;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  text-align: center;
+  padding: 5px;
+  white-space: nowrap;
 }

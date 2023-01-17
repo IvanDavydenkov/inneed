@@ -1,9 +1,9 @@
 .header {
-    background-color: #1f1f1f;
-    min-height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  background-color: #1f1f1f;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
